@@ -8,7 +8,9 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* apply styles to <header> tag */
+
+/* HEADER STYLE SECTION
+-----------------------------------------*/
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -42,11 +44,14 @@ header nav ul {
 }
 
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
 }
 
+
+/* FOOTER STYLE SECTION
+-----------------------------------------*/
 footer {
     background: #fce138;
     width: 100%;
@@ -75,8 +80,11 @@ section {
     padding: 60px;
 }
 
+
+/* UTILITY STYLES
+-----------------------------------------*/
 .section-title {
-    font-size: 55px;
+    font-size: 48px;
     color: #024e76;
     border-bottom: 3px solid;
     padding-bottom: 20px;
@@ -98,7 +106,9 @@ section {
     text-align: right;
 }
 
-/* Hero Style Start */
+
+/* HERO STYLE START 
+-----------------------------------------*/
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
@@ -106,6 +116,7 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 .hero-form {
     background-color: #fce138;
@@ -127,7 +138,7 @@ section {
     text-align: right;
     margin: 3.5%;
     color: #fff;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 .hero h2 {
     font-style: italic;
@@ -153,10 +164,10 @@ section {
     padding: 10px 20px;
     font-size: 16px;
 }
-/* Hero Style End */
 
-/* INTRO STYLES START */
 
+/* INTRO STYLES START 
+-----------------------------------------*/
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -165,9 +176,10 @@ section {
     margin: 0 auto;
     text-align: center;
 }
-/* INTRO STYLE End */
 
-/* STEPS STYLES START */
+
+/* STEPS STYLES START 
+-----------------------------------------*/
 .steps {
     background: #fce138;
 }
@@ -210,9 +222,10 @@ section {
 .step-img img {
     max-width: 100%;
 }
-/* STEPS STYLE End */
 
-/* TRAINERS STYLES START */
+
+/* TRAINERS STYLES START 
+-----------------------------------------*/
 .trainers {
     width: 100%;
     margin: 0 auto;
@@ -246,9 +259,10 @@ section {
 .trainer-bio p {
     font-size: 17px;
 }
-/* TRAINERS STYLE End */
 
-/* REACH OUT STYLES START */
+
+/* REACH OUT STYLES START 
+-----------------------------------------*/
 .contact {
     background: #024e76;
 }
@@ -263,9 +277,6 @@ section {
 .contact-info > * {
     flex:1;
     margin: 15px;
-}
-.contact-info iframe {
-
 }
 .contact-info div{
     color: white;
@@ -302,9 +313,25 @@ section {
 .contact-info a {
     color: #fce138;
 }
-/* REACH OUT End */
 
-/* FLEX STYLE */
+
+/* FLEX STYLE 
+-----------------------------------------*/
 .flex-row {
     display: flex;
+}
+
+
+/* MEDIA QUERIES - Desktop or smaller
+---------------------------------------- */
+@media screen and (max-width: 980px){
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 575px) {
+    
 }
