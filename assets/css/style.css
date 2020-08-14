@@ -1,5 +1,6 @@
 :root {
     --yellow: #fce138;
+    --light-yellow: lightyellow;
     --teal: #39a6b2;
     --navy: #024e76;
 }
@@ -267,6 +268,53 @@ section {
 }
 
 
+/* SERVICES STYLE 
+-----------------------------------------*/
+.services {
+    background: var(--yellow);
+}
+.service-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.service-grid-container {
+    background: var(--light-yellow);
+    width: 80%;
+    display: grid;
+    /* repeat (iterator size) */
+    grid-template-columns: 1fr repeat(2, 4fr);
+    grid-template-rows: repeat(5, 1fr) 2fr;
+    border: 2px solid var(--navy);
+    color: var(--navy);
+    font-size: 18px;
+}
+.service-grid-item {
+    padding: 15px 0;
+    border: 2px solid var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.service-grid-item.basic {
+    grid-column: 2/span 1;
+}
+.service-grid-item.both {
+    grid-column: 2/span 2;
+}
+.service-grid-item.cancel {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    grid-column: 1;
+    grid-row: 1/-1;
+}
+.grid-head, .grid-price, .service-grid-item.cancel {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
 /* REACH OUT STYLES START 
 -----------------------------------------*/
 .contact {
@@ -325,19 +373,6 @@ section {
 -----------------------------------------*/
 .flex-row {
     display: flex;
-}
-
-
-/* SERVICES STYLE 
------------------------------------------*/
-.services {
-    bacground: #fce138
-}
-.service-grid-container {
-
-}
-.service-grid-item {
-
 }
 
 
